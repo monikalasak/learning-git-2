@@ -19,5 +19,6 @@ h2 {
 	font-size: 58px;
 }
 .conter {
+	display: -ms-flexbox;
 	display: flex;
 }

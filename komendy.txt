@@ -1,11 +1,9 @@
-var checker = require('nu-html-checker');
+autoprefixer-cli -o main.prefixed.css main.css
+Usage: cli [options] <files/urls ...>
  
-var batch = checker.validate([ 'test.html', 'http://google.com' ]);
+  Options:
  
-batch.on('progress', function (e) {
-  console.log(checker.format('stylish', e.value), '\n');
-});
+    -h, --help                   output usage information
+    -V, --version                output the version number
+    -f, --formatter <formatter>  Choose the formatter to use. (stylish, json)
  
-batch.on('end', function (err) {
-  if (err) console.error(err.stack);
-})
