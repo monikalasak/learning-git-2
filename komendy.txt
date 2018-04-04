@@ -1,11 +1,4 @@
-var checker = require('nu-html-checker');
- 
-var batch = checker.validate([ 'test.html', 'http://google.com' ]);
- 
-batch.on('progress', function (e) {
-  console.log(checker.format('stylish', e.value), '\n');
-});
- 
-batch.on('end', function (err) {
-  if (err) console.error(err.stack);
-})
+autoprefixer-cli -o main.prefixed.css style7-3.css
+cli [-h] <learning-git-2/index.html>
+cli [-v] <learning-git-2/index.html>
+cli [-f] <learning-git-2/index.html>
